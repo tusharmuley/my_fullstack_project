@@ -62,6 +62,7 @@ def update_task(request, pk):
         return Response(serializer.data)
     return Response(serializer.errors)
 
+
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
 def delete_task(request, pk):
